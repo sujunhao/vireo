@@ -4,7 +4,7 @@ import numpy as np
 
 vireo_colors = np.array(['#4796d7', '#f79e54', '#79a702', '#df5858', '#556cab', 
                          '#de7a1f', '#ffda5c', '#4b595c', '#6ab186', '#bddbcf', 
-                         '#daad58', '#488a99', '#f79b78', '#ffba00'])
+                         '#daad58', '#488a99', '#f79b78', '#ffba00', '#03AED2', '#68D2E8', '#FEEFAD', '#D10363', '#FFE8C5', '#FFC96F', '#006769', '#344C64'])
 
 def heat_matrix(X, yticks=None, xticks=None, rotation=45, cmap='BuGn', 
                 alpha=0.6, display_value=True, row_sort=False, 
