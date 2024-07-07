@@ -149,7 +149,7 @@ def minicode_plot(barcode_set, var_ids=None, sample_ids=None,
 def anno_heat(X, row_anno=None, col_anno=None,
               row_order_ids=None, col_order_ids=None, 
               xticklabels=False, yticklabels=False,
-              row_cluster=False, col_cluster=False,
+              row_cluster=False, col_cluster=False, _color= [],
               **kwargs):
     """
     Heatmap with column or row annotations. Based on seaborn.clustermap()
@@ -159,6 +159,11 @@ def anno_heat(X, row_anno=None, col_anno=None,
     """
     
     import seaborn as sns
+
+    if len(_color) != 0:
+        global vireo_colors
+        vireo_colors = _color[:]
+
     
     # prepare row annotation
     if row_anno is not None:
